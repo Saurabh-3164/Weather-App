@@ -9,7 +9,7 @@ const [error, setError] = useState(null);
 const HandleChange=(event)=>{
   SetCity(event.target.value);
 }
-const apiKey = '6073e64254e368f22b0ea8940fbb4541';
+const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
   
 const handleClick=async(event)=>{
   event.preventDefault();
